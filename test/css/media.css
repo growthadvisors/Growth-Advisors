@@ -1,0 +1,329 @@
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir {
+    display: block;
+    text-indent: -999em;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+}
+
+.ir br {
+    display: none;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+
+/* =============================================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 240px)
+{
+	.your_mission a, .short_list a, .long_list a
+	{
+		right: 10px;	
+		display: block;
+	}	
+	
+	.oldie .logo.home
+	{
+	    max-height: 198px;
+	    width: 240px;
+	}	
+}
+
+@media only screen and (min-width: 320px) 
+{
+	.oldie #hero img
+	{
+		width: 480px;
+	}
+	.oldie .logo.home
+	{
+	    width: 320px;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+	#hero img
+	{
+		display: block;	
+	}
+	
+	.oldie #hero img
+	{
+		width: 600px;
+	}
+	
+	.oldie .logo.home
+	{
+	    width: 360px;
+	}
+	.container_12 .grid_3, .container_12 .grid_4, .container_12 .grid_5, .container_12 .grid_8
+	{
+		width: 88%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+  /* Style adjustments for viewports 600px and over go here */
+  	h1
+	{
+		text-align: left;	
+	}
+	
+	#our_experience aside {
+		float: left;
+		margin-right: 27px;
+		width: 185px;
+	}
+	
+	.your_mission .img {
+		border: 1px solid #666666;	
+		margin-top: 15px;
+		margin-right: 20px;
+		float: left;
+		display: block;
+	}
+	
+	#industries ul
+	{
+		text-align: left;
+	}
+  
+	#industries ul li
+	{
+		float: left;
+		width: 50%;	
+	}
+	
+	#s3slider 
+	{
+		display: block;
+	}
+	.oldie #hero img
+	{
+		width: 768px;
+	}
+	.container_12 .grid_3, .container_12 .grid_4, .container_12 .grid_5, .container_12 .grid_8
+	{
+		width: 94%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+	.container_12 .grid_3 {
+		width:23.0%;
+	}
+	
+	.container_12 .grid_4 {
+		width:31.333%;
+	}
+	
+	.container_12 .grid_5 {
+		width:39.667%;
+	}
+	
+	.container_12 .grid_8 {
+		width:64.667%;
+	}
+	
+	.menu-button {
+        display: none;
+    }
+    
+	.js [role='navigation'] {
+		display: block;	
+	}
+  
+	ul#nav li
+	{
+		display: inline-block !important;	
+	}
+	
+    #menucontainer
+    {
+		margin: 0 auto;
+		text-align: center;	
+    }
+	
+	ul#nav li a
+	{
+		border: 0;
+		padding: 10px;
+	}
+	
+	.short_list
+	{
+		border-bottom: 0;	
+	}
+	
+	.long_list {
+		margin-left: 20px;
+	}
+	
+	.long_list ul
+	{
+		text-align: left;	
+	}
+
+	#industries ul li
+	{
+		width: 33%;	
+	}
+	
+	#footer .copyright
+	{
+		text-align: right;
+	}
+	
+	#footer .quick_links, #footer .contact_us, #footer .copyright
+	{
+		margin: 0;	
+	}
+	
+	.oldie #hero img
+	{
+		width: 800px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	/* Style adjustments for viewports 800px and over go here */
+	.oldie #hero img
+	{
+		width: 960px;
+	}
+}
+
+@media only screen and (min-width: 960px) 
+{
+	/* Style adjustments for viewports 960px and over go here */
+	
+	
+}
+
+@media only screen and (min-width: 1024px) {
+	/* Style adjustments for viewports 1024px and over go here */
+		ul#nav
+	{
+		float: right;	
+		padding-right:25px;
+	}
+	
+	.oldie ul#nav li /*IE ONLY*/
+	{
+		float: left;	
+	}
+	
+	ul#nav li a
+	{
+		padding: 34px 8px;
+	}
+	
+	div#title
+	{
+		position: absolute;	
+		z-index: 3;
+		margin-left: -1px;
+		padding:0;
+	}
+}
+
+
+
+
+/* =============================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+ 
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        text-shadow: none !important;
+        filter: none !important;
+        -ms-filter: none !important;
+    } /* Black prints faster: sanbeiji.com/archives/953 */
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

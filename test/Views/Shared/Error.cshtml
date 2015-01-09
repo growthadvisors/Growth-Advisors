@@ -1,0 +1,18 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+
+@{
+    Page.Title = "Error";
+}
+
+<h2>
+    Sorry, an error occurred while processing your request.
+</h2>
+<h3>
+    @Model.Exception.GetType().Name
+</h3>
+<pre>
+    @Model.Exception.ToString()
+</pre>
+<p>
+    thrown in @Model.ControllerName @Model.ActionName
+</p>

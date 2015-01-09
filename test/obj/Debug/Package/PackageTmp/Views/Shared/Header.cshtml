@@ -1,0 +1,31 @@
+﻿<header id="header" class="clearfix">
+    @{
+        var controller = ViewContext.RouteData.GetRequiredString("controller");
+    }
+    <div id="title">
+        <a href='@Url.Content("~/")'>
+            @if (controller == "Home")
+            {
+                <img src='@Url.Content("~/img/logo_home.png")' class="logo home" width="100%" height="100%" />    
+            }
+            else
+            { 
+                <img src='@Url.Content("~/img/logo.png")' class="logo sub" width="100%" height="100%" />    
+            }
+        </a>
+    </div>
+    <div id="menucontainer">
+        <div class="menu-button">
+            Click for menu</div>	
+        <nav>
+            <ul id="nav" role="navigation" class="clearfix">
+                <li class="top-level">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "link-with-ul" })</li>
+                <li class="top-level">@Html.ActionLink("How We Can Help", "Index", "How-We-Can-Help", null, new { @class = "link-with-ul" })</li>
+                <li class="top-level">@Html.ActionLink("Our Experience", "Index", "Our-Experience", null, new { @class = "link-with-ul" })</li>
+                <li class="top-level">@Html.ActionLink("Our Services", "Index", "Our-Services", null, new { @class = "link-with-ul" })</li>
+                <li class="top-level">@Html.ActionLink("Industries", "Index", "Industries", null, new { @class = "link-with-ul" })</li>
+                <li class="top-level">@Html.ActionLink("Contact Us", "Index", "Contact-Us", null, new { @class = "link-with-ul" })</li>
+            </ul>       
+        </nav>
+    </div>
+</header>

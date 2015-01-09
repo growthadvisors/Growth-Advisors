@@ -1,0 +1,30 @@
+﻿<div id="s3slider">
+    <ul id="s3sliderContent">
+        <li class="s3sliderImage">
+            <img src='@Url.Content("~/img/120170235_250.jpg")' width="100%" height="100%">
+        </li>
+        <li class="s3sliderImage">
+            <img src='@Url.Content("~/img/123013679_250.jpg")' width="100%" height="100%">
+        </li>
+        <li class="s3sliderImage">
+            <img src='@Url.Content("~/img/148281810_250.jpg")' width="100%" height="100%">
+        </li>
+        <li class="s3sliderImage">
+            <img src='@Url.Content("~/img/86513663_250.jpg")' width="100%" height="100%">
+        </li>
+        <li class="s3sliderImage">
+            <img src='@Url.Content("~/img/86536156_250.jpg")' width="100%" height="100%">
+        </li>
+        <li class="s3sliderImage">
+            <img src='@Url.Content("~/img/99222616_250.jpg")' width="100%" height="100%">
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="@Url.Content("~/js/mylibs/s3Slider.js")"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#s3slider').s3Slider({
+            timeout: 500
+        });
+    });
+</script>
